@@ -515,6 +515,10 @@ footer {
         justify-content: center;
     }
 
+    #titleImage{
+        max-width: 300px;
+        height: auto;
+    }
 
    
 
