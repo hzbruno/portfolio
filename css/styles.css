@@ -423,14 +423,15 @@ footer {
     }
 
     #proyect-image{
-        max-width: 300px;
+        max-width: 275px;
         max-height: auto;
+
     }
 
 
 
     .titleP , .titleK{
-        font-size: 1.8em;
+        font-size: 1.5em;
         background-color:transparent ;
         color: black;
         padding: 5px;
