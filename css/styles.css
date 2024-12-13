@@ -1,0 +1,522 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+p {
+    font-size: 1.25em;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: black;
+    background-color: white;
+}
+
+/* Header */
+header {
+    position: fixed;
+    background: black ;
+    color: #fff;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Añade una sombra para mejor visibilidad */
+}
+
+header .logo {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #adadad;
+}
+
+#language-toggle {
+    font-size: 16px;
+    padding: 8px 12px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #ffffff; /* Fondo blanco explícito */
+    color: black;
+    cursor: pointer;
+    outline: none;
+    transition: none; /* Elimina transiciones */
+    margin-right: 40px;
+}
+
+#language-toggle:hover {
+    background-color: #f0f0f0; /* Color claro al pasar el mouse */
+    color: black; /* Asegura que el color no cambie */
+    border: 2px solid black;
+}
+
+#language-toggle option {
+    background-color: #ffffff; /* Fondo de opciones */
+    color: black;
+    padding: 5px;
+}
+
+#language-toggle option:hover {
+    background-color: #dcdcdc; /* Fondo claro para hover */
+    color: black;
+}
+
+#avatar{
+    border-radius: 15%;
+    max-width: 450px;
+    max-height: 600px;
+    margin-right: 40px;
+}
+
+#proyect-image{
+    border-radius: 20px;
+    max-width: 500px;
+    max-height: auto;
+    margin: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+#proyect-image:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+#hero {
+    margin-top: 80px;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: black;
+    text-align: center;
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.hero-content {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    color:#004570;
+}
+.hero-content h3 {
+    font-size: 1em;
+    margin-bottom: 0rem;
+    margin-top: 0px;   
+    color:#000000;
+}
+
+.hero-content h2 {
+    padding-top: 100px;
+    font-size: 1.6em;
+    margin-bottom: -.85rem;
+    margin-top: 0rem;
+    color:#000000;
+}
+
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.hero-content button {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    padding: 0.8rem 2rem;
+    background: black;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    align-items: center;
+}
+.hero-content button:hover {
+    background: linear-gradient(#023a5c, #011f31);
+}
+
+.hero-content img {
+    max-width: 50px;
+    max-height: auto;
+}
+.hero-content img:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+#correo {
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+    padding-bottom: 5px; /* Espacio para la línea */
+    padding-left: 10px; /* Espacio adicional a la izquierda */
+    padding-right: 10px; /* Espacio adicional a la derecha */
+    color: black; /* Color del texto */
+    background: linear-gradient(to top, #004570 0%, #004570 0%);
+    background-size: 100% 2px; /* Inicialmente una línea delgada */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Al pasar el mouse, el fondo cubre todo el texto y aparece la línea */
+#correo:hover {
+    background-size: 100% 100%; /* Expande el fondo verticalmente */
+    color: white; /* Cambia el color del texto */
+}
+
+
+
+/* About Section */
+#about {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#about h2 {
+    margin-bottom: 1rem;
+    font-size: 3em;
+    color: #023a5c;
+}
+
+/* Projects Section */
+#projects {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+
+
+.project {
+    padding: 40px;
+    margin: 2rem auto; /* Centra horizontalmente con 'auto' y agrega margen vertical */
+    background-color: #dddddd;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 0px 5px 10px rgb(73, 73, 73);
+    max-width: 1000px; /* Limita el ancho máximo */
+    width: 90%; /* Ocupa un 90% del ancho de la pantalla como máximo */
+}
+
+.titleK , .titleP{
+    padding: 40px;
+    margin: 2rem auto; /* Centra horizontalmente con 'auto' y agrega margen vertical */
+    text-align: left;
+    border-radius:  50px;
+    margin-bottom: -2em;
+    max-width: 1000px; /* Limita el ancho máximo */
+    width: 90%; /* Ocupa un 90% del ancho de la pantalla como máximo */
+    color: #023a5c;
+    font-size: 2em;
+
+}
+
+
+
+#knowledge {
+    padding: 40px;
+    margin: 2rem auto; /* Centra horizontalmente con 'auto' y agrega margen vertical */
+    background-color: #dddddd;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 0px 5px 10px rgb(73, 73, 73);
+    max-width: 1070px; /* Limita el ancho máximo */
+    width: 90%; /* Ocupa un 90% del ancho de la pantalla como máximo */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden hacia abajo */
+    gap: 0rem; /* Agrega espacio entre los elementos */
+}
+
+.project h3 {
+    margin-bottom: 0.5rem;
+    color:#023a5c;
+    font-size: 2em;
+
+}
+
+#contact {
+    padding: 2rem;
+    text-align: center;
+    background: #dddddd;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    margin: 2rem auto;
+    max-width: 1000px;
+    margin-bottom: 0px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#contact h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #004570;
+    box-shadow: 0px 0px 8px rgba(0, 69, 112, 0.3);
+    outline: none;
+}
+
+form button {
+    padding: 0.8rem 2rem;
+    background: black;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background: linear-gradient(#023a5c, #011f31);
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: black;
+    color: #fff;
+}
+
+
+
+#knowledge h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.knowledge-category {
+    margin-bottom: 40px;
+    display: flex; /* Permite que las categorías se alineen horizontalmente */
+    margin-right: 1em; /* Espaciado entre las categorías */
+    align-content: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgb(117, 117, 117);
+    width:  250px;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.knowledge-category h3 {
+    font-size: 1.6rem;
+    color: black;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+
+
+.knowledge-category img {
+    max-height: 40px;
+    max-width: auto;
+    padding-left: 10px;
+}
+
+
+#titleImage{
+    max-height: 95px;
+    max-width: auto;
+}
+
+#fing-section {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente la imagen y el texto */
+    gap: 10px; /* Espacio entre la imagen y el texto */
+  }
+
+  #fing {
+    max-width: 100px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+
+  #fing-section p {
+    margin: 0; /* Elimina márgenes adicionales del texto */
+  }
+
+@media (max-width: 768px) {
+
+    .hero-content{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+
+        
+    }
+    #hero{
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+    }
+    
+    #avatar{
+        max-width: 300px;
+        max-height: auto;
+        margin: 0px;
+    }
+
+    #proyect-image{
+        max-width: 300px;
+        max-height: auto;
+    }
+
+
+
+    .titleP , .titleK{
+        font-size: 1.8em;
+        background-color:transparent ;
+        color: black;
+        padding: 5px;
+        margin-bottom: 5px;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        display: flex;
+
+        
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 0.5rem;
+        font-size: .7rem;
+        
+    }
+
+    
+
+   
+
+    #knowledge {
+        padding: 10px;
+        justify-content: center;
+        width: 70%;
+        border-radius: 10px;
+        margin-top: 10px;
+        
+    }
+
+    .knowledge-category {
+        margin:0px;
+        margin-bottom: 10px; /* Espacio entre los divs */
+        width: 250px;
+        padding: 10px;
+        height: auto;
+    }
+
+    #projects {
+        padding: 20px;
+        justify-content: center;
+        display: block;
+        text-align: center; /* Centra el contenido dentro de #knowledge */
+        margin:10px;
+
+    }
+    .project{
+        padding: 20px;
+        justify-content: center;
+        display: block;
+        text-align: center; /* Centra el contenido dentro de #knowledge */
+    }
+
+
+    #knowledge h2 {
+        font-size: 2rem;
+    }
+    #knowledge h3 {
+        font-size: 1.5rem;
+    }
+
+    .knowledge-category h3 {
+        font-size: 1.8rem;
+    }
+
+    .knowledge-category ul li {
+        font-size: 1.5rem;
+    }
+
+    #language-toggle{
+        font-size: 0.8em;
+    }
+
+    #contact{
+        padding:4rem;
+        display: inline-block; /* Hace que los divs se alineen de manera bloque pero respetando el centrado */
+        text-align: center; 
+        margin:0px;
+        justify-content: center;
+    }
+
+
+   
+
+    
+}

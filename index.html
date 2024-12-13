@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Hernandez</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#knowledge" id="linkknowledge">Knowledge</a></li>
+                <li><a href="#projects" id="linkprojects">Projects</a></li>
+                <li><a href="#contact" id="linkcontact">Contact</a></li>
+                <li><a href="#about" id="linkabout">About Me</a></li>
+            </ul>
+            <select id="language-toggle">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            
+            <img src="images/avatar.png" id="avatar" alt="Avatar">
+            <div class="presentation">
+                <h2>Hi, I'm</h2>
+                <h1>Bruno Hernandez</h1>
+                <a href="mailto:hzzbruno@gmail.com"><h3 id="correo">  hzzbruno@gmail.com  </h3></a>
+                <p>Full-Stack Developer</p>
+                <a href="#contact"><button id="botoncontacto">Contact</button></a>
+                <div id="socials">
+                <a href="https://github.com/hzbruno"><img src="images/github.png"></a>
+                <a href="https://www.linkedin.com/in/bruno-hernández-villarino-9b6678256/"><img src="images/linkedin.png"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+   
+    <div class="titleK"> 
+        <h2>Knowledge</h2>
+    </div>
+    <section id="knowledge">
+    
+        <div class="knowledge-category">
+            <img src="images/c.png">
+            <h3>C Language</h3>
+        </div>
+
+        <div class="knowledge-category">
+            <img src="images/c++.png">
+            <h3>C++ Language</h3>
+        </div>
+
+        <div class="knowledge-category">
+            <img src="images/csharp.png">
+            <h3>C# Language</h3>
+        </div>
+
+        <div class="knowledge-category">
+            <img src="images/java.png">
+            <h3>Java</h3>
+        </div>
+
+        <div class="knowledge-category">
+            <img src="images/js.png">
+            <h3>Java Script</h3>
+        </div>
+
+        <div class="knowledge-category">
+            <img src="images/html.png">
+            <h3>HTML5</h3>
+        </div>
+
+        <div class="knowledge-category">
+            <img src="images/css.png">
+            <h3>CSS</h3>
+        </div>
+
+    </section>
+
+    <section id="projects" >
+
+        <div class="titleP" > 
+        <h2>Recent Projects</h2>
+        </div>
+
+        <div class="project"> 
+                <img src="images/utuRushTitle.png" id="titleImage">
+                <p id="UTU">Developed in my last year of high school, it is a Unity game made up of a collection of minigames. 
+                The project involved creating interactive mechanics, engaging visual design, and a well-organized structure to ensure a fluid and dynamic experience for players.</p>
+                <a href="https://hzbruno.github.io/UTURUSHWEB/utu-rush.html"><img src="images/utu-rush-screenshot.png" id="proyect-image" alt="UTU RUSH"> </a>
+                <p id="dessUTU">Developed with C# in Unity</p>
+        </div>
+
+        <div class="project">
+            <img src="images/volandouy.png" id="titleImage">
+            <p id="VolandoUYDescripcion">Airline system with a central server in Java (Swing) and a web server (JSP, servlets), synchronized through web services. Allows customers to book flights and 
+                airlines to manage routes and flights, with changes reflected simultaneously on both servers. It uses OOP, design patterns and custom base types.</p>
+            <a href="https://hzbruno.github.io/volandouy/"><img src="images/volandouy-screenshot.png" id="proyect-image" alt="VolandoUy"> </a>
+            <b><p id="volandouyNota">The image leads to a static page with the intention of showing the proposed base design.</p></b>
+            <a href="https://youtu.be/xBILf6OG5Bs"><p id="volandouyEnlace"><b>Link to representative video of the page</b></p></a>
+            <p id="dessVUY">Developed with HTML, CSS , JavaScript, Servlets, Java, Maven</p>
+        </div>
+
+        <div class="project">
+            <img src="images/servidorCentral.png" id="titleImage">
+            <p id="centralD">Developed in Swing, this component represents the central server of the project, responsible for managing the main logic and starting the web services for communication with other modules.</p>
+            <a href="https://drive.google.com/file/d/1xfXoGvvwnJvIr5WxABmkNa6ZjNR-iNnF/view?usp=sharing"><img src="images/servidorCentral-screenshot.png" id="proyect-image" alt="Servidor Central VolandoUY"> </a>
+            <p id="dessVUYC">Developed with Java and Swing in eclipse</p>
+        </div>
+
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div id="fing-section">
+            <p>Software Engineering student, currently in the fourth year of the degree.</p> 
+            <img src="images/fing.png" id="fing">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="#" method="POST">
+            <label for="name" id="nombreContacto">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message" id="mensajeContacto">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" id="botonEnviar">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bruno Hernandez. All rights reserved.</p>
+    </footer>
+
+    <script src="js/contact.js"></script>
+    <script src="js/language.js"></script>
+    <script>
+        ScrollReveal().reveal('#hero', { delay: 300, origin: 'top', distance: '50px', duration: 1000 });
+        ScrollReveal().reveal('#about', { delay: 200, origin: 'left', distance: '50px', duration: 1000 });
+        ScrollReveal().reveal('#knowledge ', { delay: 200, origin: 'right', distance: '50px', duration: 1000 });
+        ScrollReveal().reveal('.titleK ', { delay: 200, origin: 'right', distance: '50px', duration: 1000 });
+        ScrollReveal().reveal('#projects .project ', { delay: 300, origin: 'bottom', distance: '50px', duration: 1000, interval: 200 });
+        ScrollReveal().reveal('.titleP ', { delay: 300, origin: 'bottom', distance: '50px', duration: 1000, interval: 200 });
+        ScrollReveal().reveal('#contact', { delay: 200, origin: 'bottom', distance: '50px', duration: 1000 });
+        
+    </script>
+</body>
+</html>
