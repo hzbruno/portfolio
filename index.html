@@ -12,8 +12,8 @@
     <header>
         <nav>
             <ul class="nav-links">
-                <li><a href="#knowledge" id="linkknowledge">Knowledge</a></li>
-                <li><a href="#projects" id="linkprojects">Projects</a></li>
+                <li><a href="#titleK" id="linkknowledge">Knowledge</a></li>
+                <li><a href="#titleP" id="linkprojects">Projects</a></li>
                 <li><a href="#contact" id="linkcontact">Contact</a></li>
                 <li><a href="#about" id="linkabout">About Me</a></li>
             </ul>
@@ -44,7 +44,8 @@
 
     
    
-    <div class="titleK"> 
+    <div class="titleK" id="titleK"> 
+        <div id="spacer"></div>
         <h2>Knowledge</h2>
     </div>
     <section id="knowledge">
@@ -91,34 +92,50 @@
 
     </section>
 
-    <section id="projects" >
-
-        <div class="titleP" > 
+    <div class="titleP" id="titleP" > 
+        <div id="spacer"></div>
         <h2>Recent Projects</h2>
-        </div>
+    </div>
+
+    <section id="projects" >
 
         <div class="project"> 
                 <img src="images/utuRushTitle.png" id="titleImage">
+
+                <div id="informationBox">
                 <p id="UTU">Developed in my last year of high school, it is a Unity game made up of a collection of minigames. 
                 The project involved creating interactive mechanics, engaging visual design, and a well-organized structure to ensure a fluid and dynamic experience for players.</p>
                 <a href="https://hzbruno.github.io/UTURUSHWEB/utu-rush.html"><img src="images/utu-rush-screenshot.png" id="proyect-image" alt="UTU RUSH"> </a>
+                </div>
                 <p id="dessUTU">Developed with C# in Unity</p>
+                
         </div>
 
         <div class="project">
             <img src="images/volandouy.png" id="titleImage">
+
+            <div id="informationBox">
             <p id="VolandoUYDescripcion">Airline system with a central server in Java (Swing) and a web server (JSP, servlets), synchronized through web services. Allows customers to book flights and 
                 airlines to manage routes and flights, with changes reflected simultaneously on both servers. It uses OOP, design patterns and custom base types.</p>
             <a href="https://hzbruno.github.io/volandouy/"><img src="images/volandouy-screenshot.png" id="proyect-image" alt="VolandoUy"> </a>
-            <b><p id="volandouyNota">The image leads to a static page with the intention of showing the proposed base design.</p></b>
-            <a href="https://youtu.be/xBILf6OG5Bs"><p id="volandouyEnlace"><b>Link to representative video of the page</b></p></a>
+        </div>
+        
             <p id="dessVUY">Developed with HTML, CSS , JavaScript, Servlets, Java, Maven</p>
+            <b><h3 id="volandouyNota">The image leads to a static page with the intention of showing the proposed base design.</h3></b>        
+            <a href="https://youtu.be/xBILf6OG5Bs"><h3 id="volandouyEnlace"><b>Link to representative video of the page</b></h3></a>
+            
+            
+
         </div>
 
         <div class="project">
             <img src="images/servidorCentral.png" id="titleImage">
+
+            <div id="informationBox">
             <p id="centralD">Developed in Swing, this component represents the central server of the project, responsible for managing the main logic and starting the web services for communication with other modules.</p>
             <a href="https://drive.google.com/file/d/1xfXoGvvwnJvIr5WxABmkNa6ZjNR-iNnF/view?usp=sharing"><img src="images/servidorCentral-screenshot.png" id="proyect-image" alt="Servidor Central VolandoUY"> </a>
+            </div>
+
             <p id="dessVUYC">Developed with Java and Swing in eclipse</p>
         </div>
 
