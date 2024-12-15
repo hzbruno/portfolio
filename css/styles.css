@@ -20,7 +20,7 @@ body {
 /* Header */
 header {
     position: fixed;
-    background: black ;
+    background: #272727 ;
     color: #fff;
     padding: 1em;
     position: fixed;
@@ -212,9 +212,14 @@ header nav {
 }
 
 #about h2 {
-    margin-bottom: 1rem;
-    font-size: 3em;
+    padding: 40px;
+    margin: 0rem auto; /* Centra horizontalmente con 'auto' y agrega margen vertical */
+    text-align: center;
+    max-width: 1000px; /* Limita el ancho máximo */
+    width: 90%; /* Ocupa un 90% del ancho de la pantalla como máximo */
     color: #004570;
+    font-size: 2.4em;
+    text-shadow: 0px 1px 5px rgb(117, 117, 117);
 }
 
 /* Projects Section */
@@ -269,9 +274,24 @@ header nav {
     font-family: sans-serif;
 }
 #volandouyEnlace{
-    color: #023a5c ;
-    font-family: sans-serif;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+    padding-bottom: 5px; /* Espacio para la línea */
+    padding-left: 10px; /* Espacio adicional a la izquierda */
+    padding-right: 10px; /* Espacio adicional a la derecha */
+    color: #004570; /* Color del texto */
+    background: linear-gradient(to top, #004570 0%, #004570 0%);
+    background-size: 100% 2px; /* Inicialmente una línea delgada */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
     font-size: 1em;
+}
+
+#volandouyEnlace:hover {
+    background-size: 100% 100%; /* Expande el fondo verticalmente */
+    color: white; /* Cambia el color del texto */
 }
 
 
@@ -287,7 +307,7 @@ header nav {
 
 
 
-.titleK , .titleP{
+.titleK , .titleP {
     padding: 40px;
     margin: 2rem auto; /* Centra horizontalmente con 'auto' y agrega margen vertical */
     text-align: center;
@@ -296,7 +316,8 @@ header nav {
     max-width: 1000px; /* Limita el ancho máximo */
     width: 90%; /* Ocupa un 90% del ancho de la pantalla como máximo */
     color: #004570;
-    font-size: 2em;
+    font-size: 2.4em;
+    text-shadow: 0px 1px 5px rgb(117, 117, 117);
 
 }
 
@@ -313,11 +334,12 @@ header nav {
     text-align: center;
     border-radius: 4px;
    /*box-shadow: 0px 5px 10px rgb(73, 73, 73);*/
-    max-width: 1070px; /* Limita el ancho máximo */
+    max-width: 1080px; /* Limita el ancho máximo */
     width: 90%; /* Ocupa un 90% del ancho de la pantalla como máximo */
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se acomoden hacia abajo */
     gap: 0rem; /* Agrega espacio entre los elementos */
+    
 }
 
 #knowledge h2 {
@@ -372,9 +394,14 @@ header nav {
 }
 
 #contact h2 {
-    font-size: 2rem;
+    padding: 40px;
+    margin: 0rem auto; /* Centra horizontalmente con 'auto' y agrega margen vertical */
+    text-align: center;
+    max-width: 1000px; /* Limita el ancho máximo */
+    width: 90%; /* Ocupa un 90% del ancho de la pantalla como máximo */
     color: #004570;
-    margin-bottom: 1rem;
+    font-size: 2.4em;
+    text-shadow: 0px 1px 5px rgb(117, 117, 117);
 }
 
 #contact form {
@@ -425,7 +452,7 @@ form button:hover {
 footer {
     text-align: center;
     padding: 1rem;
-    background: black;
+    background: #272727;
     color: #fff;
 }
 
