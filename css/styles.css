@@ -206,6 +206,81 @@ header nav {
 
 
 
+
+.titleK , .titleP  {
+    padding: 40px;
+    margin: 2rem auto; /* Centra horizontalmente con 'auto' y agrega margen vertical */
+    text-align: center;
+    border-radius:  50px;
+    max-width: 1000px; /* Limita el ancho máximo */
+    width: 90%; /* Ocupa un 90% del ancho de la pantalla como máximo */
+    color: #004570;
+    font-size: 2.4em;
+    
+
+}
+
+#knowledge-section{
+    background-color: #dbdbdb;
+    height: 80vh;
+}
+
+
+
+#knowledge {
+    padding: 40px;
+    text-align: center;
+    
+    
+}
+#conocimientos{
+    padding: 40px;
+    margin: 2rem auto; 
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    max-width: 70vw;
+}
+
+
+
+.knowledge-category {
+    margin-bottom: 40px;
+    display: flex; /* Permite que las categorías se alineen horizontalmente */
+    margin-right: 1em; /* Espaciado entre las categorías */
+    align-content: center;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 5px 5px rgb(235, 235, 235);
+    width:  250px;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.knowledge-category h3 {
+    font-size: 1.6rem;
+    color: black;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+
+
+.knowledge-category img {
+    max-height: 40px;
+    max-width: auto;
+    padding-left: 10px;
+}
+
+#projects-section{
+    background-color: #fff;
+}
+
+
+
 #projects {
     padding: 2rem 1rem;
 
@@ -283,75 +358,15 @@ header nav {
     color: white; /* Cambia el color del texto */
 }
 
-.titleK , .titleP  {
-    padding: 40px;
-    margin: 2rem auto; /* Centra horizontalmente con 'auto' y agrega margen vertical */
-    text-align: center;
-    border-radius:  50px;
-    max-width: 1000px; /* Limita el ancho máximo */
-    width: 90%; /* Ocupa un 90% del ancho de la pantalla como máximo */
-    color: #004570;
-    font-size: 2.4em;
-    
 
+#about-section{
+    background-color: #dbdbdb;
 }
-
-
-
-
-#knowledge {
-    padding: 40px;
-    text-align: center;
-    height: 50vh;
-    background-color: #dddddd;
-}
-#conocimientos{
-    padding: 40px;
-    margin: 2rem auto; 
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-}
-
-
-
-.knowledge-category {
-    margin-bottom: 40px;
-    display: flex; /* Permite que las categorías se alineen horizontalmente */
-    margin-right: 1em; /* Espaciado entre las categorías */
-    align-content: center;
-    background-color: #ffffff;
-    border-radius: 4px;
-    box-shadow: 0px 5px 5px rgb(235, 235, 235);
-    width:  250px;
-    height: 50px;
-    padding-top: 10px;
-}
-
-.knowledge-category h3 {
-    font-size: 1.6rem;
-    color: black;
-    margin-bottom: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-    
-}
-
-
-
-.knowledge-category img {
-    max-height: 40px;
-    max-width: auto;
-    padding-left: 10px;
-}
-
 
 /* About Section */
 #about {
     padding: 2rem 1rem;
     height: 50vh;
-    background-color: #dddddd;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -385,7 +400,9 @@ header nav {
   }
 
 
-
+#contact-section{
+    
+}
 
 #contact {
     padding: 2rem;
@@ -393,7 +410,6 @@ header nav {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     margin-bottom: 0px;
-    background-color: #bbbbbb;
 }
 
 #contact h2 {
@@ -484,6 +500,7 @@ footer {
         align-items: center;
         align-self: center;
         justify-content: center;
+        height: 120vh;
 
     }
     
@@ -526,14 +543,12 @@ footer {
 
    
 
-    #knowledge {
+    #knowledge-section {
         padding: 10px;
         justify-content: center;
         border-radius: 10px;
-        height: 100vh;
-        margin-top: 25vh;
+        height: fit-content;
 
-        
     }
 
     .knowledge-category {
@@ -544,6 +559,10 @@ footer {
         height: auto;
     }
 
+    #projects-section{
+        height: fit-content;
+    }
+
     #projects {
         justify-content: center;
         display: block;
@@ -552,7 +571,8 @@ footer {
     }
 
     #informationBox{
-        height: 350px;
+        height: 80vw;
+        width: 80vw;
     }
 
     #projectos {
@@ -575,9 +595,17 @@ footer {
     #knowledge h3 {
         font-size: 1.5rem;
     }
+    
+    .knowledge-category{
+        width: fit-content;
+        margin:10px;
+    }
 
     .knowledge-category h3 {
-        font-size: 1.8rem;
+        display: none;
+    }
+    .knowledge-category img {
+        padding-left: 0px;
     }
 
     .knowledge-category ul li {
@@ -604,6 +632,8 @@ footer {
     #about{
         height: 100vh;
     }
+
+    
 
    
 
