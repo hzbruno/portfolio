@@ -12,8 +12,8 @@
     <header>
         <nav>
             <ul class="nav-links">
-                <li><a href="#titleK" id="linkknowledge">Knowledge</a></li>
-                <li><a href="#titleP" id="linkprojects">Projects</a></li>
+                <li><a href="#knowledge" id="linkknowledge">Knowledge</a></li>
+                <li><a href="#projects" id="linkprojects">Projects</a></li>
                 <li><a href="#about" id="linkabout">About Me</a></li>
                 <li><a href="#contact" id="linkcontact">Contact</a></li>
             </ul>
@@ -44,12 +44,15 @@
 
     
    
-    <div class="titleK" id="titleK"> 
-        <div id="spacer"></div>
-        <h2>Knowledge</h2>
-    </div>
+
     <section id="knowledge">
-    
+        <div class="titleK" id="titleK"> 
+            <div id="spacer"></div>
+            <h2>Knowledge</h2>
+        </div>
+
+
+    <div id="conocimientos">
         <div class="knowledge-category">
             <img src="images/c.png">
             <h3>C Language</h3>
@@ -89,63 +92,71 @@
             <img src="images/python.png">
             <h3>Python</h3>
         </div>
+    </div>
 
     </section>
 
-    <div class="titleP" id="titleP" > 
-        <div id="spacer"></div>
-        <h2>Recent Projects</h2>
-    </div>
+
 
     <section id="projects" >
-
-        <div class="project"> 
-                <img src="images/utuRushTitle.png" id="titleImage">
-
-                <div id="informationBox">
-                <p id="UTU">Developed in my last year of high school, it is a Unity game made up of a collection of minigames. 
-                The project involved creating interactive mechanics, engaging visual design, and a well-organized structure to ensure a fluid and dynamic experience for players.</p>
-                <a href="https://hzbruno.github.io/UTURUSHWEB/utu-rush.html"><img src="images/utu-rush-screenshot.png" id="proyect-image" alt="UTU RUSH"> </a>
-                </div>
-                <p id="dessUTU">Developed with C# in Unity</p>
-                
+        <div class="titleP" id="titleP"> 
+            <div id="spacer"></div>
+            <h2>Recent Projects</h2>
         </div>
-
+       
+       
+    <div id="projectos">
         <div class="project">
             <img src="images/volandouy.png" id="titleImage">
 
             <div id="informationBox">
             <p id="VolandoUYDescripcion">Airline system with a central server in Java (Swing) and a web server (JSP, servlets), synchronized through web services. Allows customers to book flights and 
                 airlines to manage routes and flights, with changes reflected simultaneously on both servers. It uses OOP, design patterns and custom base types.</p>
-            <a href="https://hzbruno.github.io/volandouy/"><img src="images/volandouy-screenshot.png" id="proyect-image" alt="VolandoUy"> </a>
-        </div>
-        
+                </div>
+            <a href="https://youtu.be/xBILf6OG5B"><img src="images/volandouy-screenshot.png" id="proyect-image" alt="VolandoUy"> </a>
+          
             <p id="dessVUY">Developed with HTML, CSS , JavaScript, Servlets, Java, Maven</p>
-            <b><h3 id="volandouyNota">The image leads to a static page with the intention of showing the proposed base design.</h3></b>        
-            <a href="https://youtu.be/xBILf6OG5Bs"><h3 id="volandouyEnlace"><b>Link to representative video of the page</b></h3></a>
-            
-            
 
+         </div>
+
+        <div class="project"> 
+            <img src="images/utuRushTitle.png" id="titleImage">
+
+            <div id="informationBox">
+            <p id="UTU">Developed in my last year of high school, it is a Unity game made up of a collection of minigames. 
+            The project involved creating interactive mechanics, engaging visual design, and a well-organized structure to ensure a fluid and dynamic experience for players.</p>
+                </div>
+            <a href="https://hzbruno.github.io/UTURUSHWEB/utu-rush.html"><img src="images/utu-rush-screenshot.png" id="proyect-image" alt="UTU RUSH"> </a>
+
+            <p id="dessUTU">Developed with C# in Unity</p>
+            
         </div>
+
+      
 
         <div class="project">
             <img src="images/servidorCentral.png" id="titleImage">
 
             <div id="informationBox">
             <p id="centralD">Developed in Swing, this component represents the central server of the project, responsible for managing the main logic and starting the web services for communication with other modules.</p>
+                </div>
             <a href="https://drive.google.com/file/d/1xfXoGvvwnJvIr5WxABmkNa6ZjNR-iNnF/view?usp=sharing"><img src="images/servidorCentral-screenshot.png" id="proyect-image" alt="Servidor Central VolandoUY"> </a>
-            </div>
+            
 
             <p id="dessVUYC">Developed with Java and Swing in eclipse</p>
         </div>
+
+    </div>
 
     </section>
 
     <section id="about">
         <h2>About Me</h2>
         <div id="fing-section">
-            <p>Software Engineering student, currently in the fourth year of the degree.</p> 
-            <img src="images/fing.png" id="fing">
+            <p>I am a Software Engineering student currently in the fourth year of my degree. 
+                I have a strong talent for self-research and self-education, which helps me stay updated and continuously improve my skills. 
+                Additionally, I work at my family's tech and general goods store in my local city, where I am actively involved as a customer service advisor,
+                 assisting clients and ensuring a positive experience.</p> 
         </div>
     </section>
 
@@ -175,9 +186,9 @@
         ScrollReveal().reveal('#hero', { delay: 300, origin: 'top', distance: '50px', duration: 1000 });
         ScrollReveal().reveal('#about', { delay: 200, origin: 'left', distance: '50px', duration: 1000 });
         ScrollReveal().reveal('#knowledge ', { delay: 200, origin: 'right', distance: '50px', duration: 1000 });
-        ScrollReveal().reveal('.titleK ', { delay: 200, origin: 'right', distance: '50px', duration: 1000 });
+        
         ScrollReveal().reveal('#projects .project ', { delay: 300, origin: 'bottom', distance: '50px', duration: 1000, interval: 200 });
-        ScrollReveal().reveal('.titleP ', { delay: 300, origin: 'bottom', distance: '50px', duration: 1000, interval: 200 });
+        
         ScrollReveal().reveal('#contact', { delay: 200, origin: 'bottom', distance: '50px', duration: 1000 });
         
     </script>

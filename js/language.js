@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const texts = {
         en: {
             about: "About Me",
-            aboutp: "Software Engineering student, currently in the fourth year of the degree.",
+            aboutp: "I am a Software Engineering student currently in the fourth year of my degree. I have a strong talent for self-research and self-education, which helps me stay updated and continuously improve my skills. Additionally, I work at my family's tech and general goods store in my local city, where I am actively involved as a customer service advisor,assisting clients and ensuring a positive experience.",
             knowledge: "My Knowledge",
             projects: "Recent Projects",
             contact: "Contact",
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         es: {
             about: "Sobre mí",
-            aboutp: "Estudiante de Ingeniería de Software, actualmente en el cuarto año de la carrera.",
+            aboutp: "Soy estudiante de Ingeniería de Software actualmente en el cuarto año de la carrera. Tengo un gran talento para la autoinvestigación y la autoeducación, lo que me ayuda a mantenerme actualizado y mejorar continuamente mis habilidades. Además, trabajo en la tienda de artículos generales y de tecnología de mi familia en mi ciudad local, donde participo activamente como asesor de servicio al cliente, asistiendo a los clientes y garantizando una experiencia positiva.",
             knowledge: "Mis Conocimientos",
             projects: "Proyectos Recientes",
             contact: "Contacto",
@@ -68,8 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const lang = event.target.value;
         document.querySelector("#UTU").textContent = texts[lang].utu;
         document.querySelector("#VolandoUYDescripcion").textContent = texts[lang].vuyd;
-        document.querySelector("#volandouyNota").textContent = texts[lang].vuyn;
-        document.querySelector("#volandouyEnlace").textContent = texts[lang].vuye;
         document.querySelector("#centralD").textContent = texts[lang].centralD;
 
         document.querySelector("#nombreContacto").textContent = texts[lang].nombreC;

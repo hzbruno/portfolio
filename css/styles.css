@@ -23,7 +23,6 @@ header {
     background: #272727 ;
     color: #fff;
     padding: 1em;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -111,7 +110,6 @@ header nav {
 
 /* Hero Section */
 #hero {
-    margin-top: 80px;
     background: url('hero-bg.jpg') no-repeat center center/cover;
     color: #333;
     text-align: center;
@@ -119,7 +117,7 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 175px;
+    height: 100vh;
 }
 
 .hero-content {
@@ -205,62 +203,52 @@ header nav {
 
 
 
-/* About Section */
-#about {
-    padding: 2rem 1rem;
-    text-align: center;
-}
 
-#about h2 {
-    padding: 40px;
-    margin: 0rem auto; /* Centra horizontalmente con 'auto' y agrega margen vertical */
-    text-align: center;
-    max-width: 1000px; /* Limita el ancho máximo */
-    width: 90%; /* Ocupa un 90% del ancho de la pantalla como máximo */
-    color: #004570;
-    font-size: 2.4em;
-    text-shadow: 0px 1px 5px rgb(117, 117, 117);
-}
 
-/* Projects Section */
+
 #projects {
     padding: 2rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    align-items: center;
+    
+}
+
+#projectos {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
+    max-width: 90vh;
+
+   
 }
 
 
 
 .project {
-    padding: 40px;
-    margin: 2rem auto; /* Centra horizontalmente con 'auto' y agrega margen vertical */
     text-align: center;
-    border-radius: 4px;
-    max-width: 1000px; /* Limita el ancho máximo */
-    width: 90%; /* Ocupa un 90% del ancho de la pantalla como máximo */
     font-family: monospace;
+    height: 100vh;
+    margin:20px;
 }
 
 .project h3 {
-    margin-bottom: 0.5rem;
-    color:#023a5c;
-    font-size: 2em;
-
+    color: #333;
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-bottom: 0px;
+    margin-top: 0.5em;
 }
 
+
 #titleImage{
-    max-height: 95px;
+    max-height: 120px;
     max-width: auto;
     padding: 14px;
     border-radius: 6px;
-
-    
-    /*background-color: rgb(250, 250, 250);
-    box-shadow: 0px 5px 5px rgb(117, 117, 117);*/
-
-
 }
 
 #informationBox{
@@ -272,6 +260,7 @@ header nav {
 #informationBox p{
     color: #333333;
     font-family: sans-serif;
+    height: 220px;
 }
 #volandouyEnlace{
     display: inline-block;
@@ -294,66 +283,45 @@ header nav {
     color: white; /* Cambia el color del texto */
 }
 
-
-.project h3{
-    color: #333;
-    font-family: sans-serif;
-    font-size: 1em;
-    margin-bottom: 0px;
-    margin-top: 0.5em;
-}
-
-
-
-
-
-.titleK , .titleP {
+.titleK , .titleP  {
     padding: 40px;
     margin: 2rem auto; /* Centra horizontalmente con 'auto' y agrega margen vertical */
     text-align: center;
     border-radius:  50px;
-    margin-bottom: -2em;
     max-width: 1000px; /* Limita el ancho máximo */
     width: 90%; /* Ocupa un 90% del ancho de la pantalla como máximo */
     color: #004570;
     font-size: 2.4em;
-    text-shadow: 0px 1px 5px rgb(117, 117, 117);
+    
 
 }
 
-#spacer{
-    height: 50px;
-}
 
 
 
 #knowledge {
     padding: 40px;
-    margin: 2rem auto; /* Centra horizontalmente con 'auto' y agrega margen vertical */
-    /*background-color: #dddddd;*/
     text-align: center;
-    border-radius: 4px;
-   /*box-shadow: 0px 5px 10px rgb(73, 73, 73);*/
-    max-width: 1080px; /* Limita el ancho máximo */
-    width: 90%; /* Ocupa un 90% del ancho de la pantalla como máximo */
+    height: 50vh;
+    background-color: #dddddd;
+}
+#conocimientos{
+    padding: 40px;
+    margin: 2rem auto; 
+    text-align: center;
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se acomoden hacia abajo */
-    gap: 0rem; /* Agrega espacio entre los elementos */
-    
+    flex-wrap: wrap; 
+    justify-content: center;
 }
 
-#knowledge h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #333;
-}
+
 
 .knowledge-category {
     margin-bottom: 40px;
     display: flex; /* Permite que las categorías se alineen horizontalmente */
     margin-right: 1em; /* Espaciado entre las categorías */
     align-content: center;
-    background-color: #dddddd;
+    background-color: #ffffff;
     border-radius: 4px;
     box-shadow: 0px 5px 5px rgb(235, 235, 235);
     width:  250px;
@@ -379,6 +347,42 @@ header nav {
 }
 
 
+/* About Section */
+#about {
+    padding: 2rem 1rem;
+    height: 50vh;
+    background-color: #dddddd;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#about h2 {
+    padding: 40px;
+    text-align: center;
+    color: #004570;
+    font-size: 2.4em;
+    
+}
+
+
+#fing-section {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente la imagen y el texto */
+    gap: 10px; /* Espacio entre la imagen y el texto */
+    width: 80%;
+  }
+
+  #fing {
+    max-width: 100px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+
+  #fing-section p {
+    margin: 0; /* Elimina márgenes adicionales del texto */
+  }
 
 
 
@@ -388,9 +392,8 @@ header nav {
     text-align: center;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    margin: 2rem auto;
-    max-width: 1000px;
     margin-bottom: 0px;
+    background-color: #bbbbbb;
 }
 
 #contact h2 {
@@ -401,7 +404,7 @@ header nav {
     width: 90%; /* Ocupa un 90% del ancho de la pantalla como máximo */
     color: #004570;
     font-size: 2.4em;
-    text-shadow: 0px 1px 5px rgb(117, 117, 117);
+    
 }
 
 #contact form {
@@ -460,23 +463,13 @@ footer {
 
 
 
-#fing-section {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Centra verticalmente la imagen y el texto */
-    gap: 10px; /* Espacio entre la imagen y el texto */
-  }
-
-  #fing {
-    max-width: 100px; /* Ajusta el tamaño de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
-  }
-
-  #fing-section p {
-    margin: 0; /* Elimina márgenes adicionales del texto */
-  }
 
 @media (max-width: 768px) {
+
+    header {
+        position: static; /* Ya no es fijo */
+        box-shadow: none; /* Opcional: elimina la sombra */
+    }
 
     .hero-content{
         display: block;
@@ -484,12 +477,14 @@ footer {
         align-items: center;
         align-self: center;
 
+
         
     }
     #hero{
         align-items: center;
         align-self: center;
         justify-content: center;
+
     }
     
     #avatar{
@@ -534,9 +529,10 @@ footer {
     #knowledge {
         padding: 10px;
         justify-content: center;
-        width: 70%;
         border-radius: 10px;
-        margin-top: 10px;
+        height: 100vh;
+        margin-top: 25vh;
+
         
     }
 
@@ -549,11 +545,20 @@ footer {
     }
 
     #projects {
-        padding: 20px;
         justify-content: center;
         display: block;
         text-align: center; /* Centra el contenido dentro de #knowledge */
-        margin:10px;
+
+    }
+
+    #informationBox{
+        height: 350px;
+    }
+
+    #projectos {
+        justify-content: center;
+        display: block;
+        text-align: center; /* Centra el contenido dentro de #knowledge */
 
     }
     .project{
@@ -594,6 +599,10 @@ footer {
     #titleImage{
         max-width: 300px;
         height: auto;
+    }
+
+    #about{
+        height: 100vh;
     }
 
    
