@@ -480,6 +480,16 @@ footer {
 
 
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: white;
+    overflow-x: hidden; /* Elimina el scroll horizontal */
+}
+
+
+
 
 
 
@@ -568,8 +578,8 @@ footer {
 
     #projects {
         justify-content: center;
-        display: block;
-        text-align: center; /* Centra el contenido dentro de #knowledge */
+        display: inline;
+
 
     }
 
@@ -640,6 +650,9 @@ footer {
         height: 100vh;
     }
 
+    #informationBox{
+        height: fit-content;
+    }
 
 
    
@@ -686,7 +699,7 @@ footer {
     }
 
     #proyect-image{
-        max-width: 275px;
+        max-width: 250px;
         max-height: auto;
 
     }
@@ -733,7 +746,7 @@ footer {
 
 
     #informationBox{
-       height: 60vh;
+       height: fit-content;
        font-size: 0.8em;
     }
 
@@ -791,9 +804,21 @@ footer {
     }
 
     #titleImage{
-        margin-top: 4vh;
         width: 328px;
         height: auto;
+    }
+    #imagenProyecto{
+        width: 330px;
+        height: 150px;
+    }
+    /* Proyectos */
+    #projectos {
+        display: flex;
+        flex-wrap: wrap; /* Permite ajuste para pantallas pequeñas */
+        justify-content: center;
+        gap: 1rem; /* Espaciado entre proyectos */
+        max-width: 100%; /* Asegura que no desborde */
+        margin: 20px auto;
     }
 
 
