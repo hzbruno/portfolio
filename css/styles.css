@@ -413,11 +413,16 @@ footer {
     }
 
     #about {
+        height: fit-content;
         max-height: fit-content;
     }
 
+    #recentProjects{
+        padding: 100px;
+    }
+
     #projects{
-        height: 250vh;
+        height: fit-content;
     }
 
     #projects-content{
@@ -430,7 +435,7 @@ footer {
     }
     #projects #project {
         font-size: 1rem;
-        width: 60vw;
+        width: fit-content;
         height: fit-content;
         margin: auto;
         margin-bottom: 40px;
@@ -439,6 +444,15 @@ footer {
     #project #informationBox{
         height: fit-content;
         margin-bottom:30px ;
+    }
+
+    #contact h2{
+        font-size: 2.3em;
+    }
+
+
+    form input, form textarea {
+        width: 90%;
     }
 
 }
@@ -475,9 +489,13 @@ footer {
         padding-bottom: 40px;
         
     }
+    #recentProjects{
+        padding: 50px;
+    }
+
 
     #projects{
-        height: 400vh;
+        height: fit-content;
     }
 
     #projects-content{
