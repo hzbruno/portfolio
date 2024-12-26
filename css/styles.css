@@ -7,8 +7,9 @@ body, h1, h2, h3, p, ul, li, a {
 }
 
 p {
-    font-size: 1.25em;
+    font-size: 1rem;
 }
+
 
 body {
     font-family: Arial, sans-serif;
@@ -17,10 +18,9 @@ body {
     background-color: white;
 }
 
-/* Header */
 header {
     position: fixed;
-    background: #272727 ;
+    background: black ;
     color: #fff;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -47,6 +47,7 @@ header nav {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    margin-left: 1vw;
 }
 
 .nav-links a {
@@ -62,35 +63,28 @@ header nav {
 #language-toggle {
     font-size: 16px;
     padding: 8px 12px;
-    border: 2px solid #333;
+    border: 2px solid black;
     border-radius: 0px;
-    background-color: #ffffff; /* Fondo blanco explícito */
+    background-color: #ffffff;
     color: #333;
     cursor: pointer;
     outline: none;
-    transition: none; /* Elimina transiciones */
-    margin-right: 40px;
+    transition: none;
+    margin-right: 3vw;
 }
 
 #language-toggle:hover {
-    background-color: #f0f0f0; /* Color claro al pasar el mouse */
-    color: #333; /* Asegura que el color no cambie */
-    border: 2px solid #333;
+    background-color: #f0f0f0; 
+    color: #333; 
 }
 
 #language-toggle option {
-    background-color: #ffffff; /* Fondo de opciones */
-    color: #333;
-    padding: 5px;
-   
-}
-
-#language-toggle option:hover {
-    background-color: #dcdcdc; /* Fondo claro para hover */
+    background-color: #ffffff; 
     color: #333;
 }
 
-#avatar{
+
+#hero #avatar{
     border-radius: 15%;
     max-width: 450px;
     max-height: 600px;
@@ -98,29 +92,19 @@ header nav {
     transform: translateY(0px);
 }
 
-#proyect-image{
-    border-radius: 4px;
-    max-width: 26vw;
-    max-height: auto;
-    margin: 20px;
-    box-shadow: 0px 5px 10px rgb(73, 73, 73);
-}
-#proyect-image:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
 /* Hero Section */
-#hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
+section {
     color: #333;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
+    
 }
+
+
 
 .hero-content {
     max-width: 80%;
@@ -137,40 +121,45 @@ header nav {
     color:#004570;
 }
 .hero-content h3 {
-    font-size: 1em;
-    margin-bottom: 0rem;
-    margin-top: 0px;   
+    font-size: 1em;  
     color:#000000;
 }
 
 .hero-content h2 {
-    padding-top: 100px;
     font-size: 1.6em;
     margin-bottom: -.85rem;
-    margin-top: 0rem;
     color:#000000;
 }
 
 
 .hero-content p {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    color:#333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.hero-content button {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    padding: 0.8rem 2rem;
-    background: black;
-    color: #fff;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    align-items: center;
+#hero #correo {
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+    padding-bottom: 5px; 
+    padding-top: 5px; 
+    padding-left: 10px; 
+    padding-right: 10px; 
+    color: #333; 
+    background: linear-gradient(to top, #004570 0%, #004570 0%);
+    background-size: 100% 2px; 
+    background-position: bottom;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-.hero-content button:hover {
-    background: linear-gradient(#023a5c, #011f31);
+
+
+#hero #correo:hover {
+    background-size: 100% 100%; 
+    color: white; 
 }
 
 .hero-content img {
@@ -179,250 +168,160 @@ header nav {
 }
 .hero-content img:hover {
     cursor: pointer;
-    transform: translateY(-3px);
+    transform: scale(1.1);
 }
 
-#correo {
-    display: inline-block;
-    position: relative;
-    font-weight: bold;
-    padding-bottom: 5px; /* Espacio para la línea */
-    padding-left: 10px; /* Espacio adicional a la izquierda */
-    padding-right: 10px; /* Espacio adicional a la derecha */
-    color: #333; /* Color del texto */
-    background: linear-gradient(to top, #004570 0%, #004570 0%);
-    background-size: 100% 2px; /* Inicialmente una línea delgada */
-    background-position: bottom;
-    background-repeat: no-repeat;
-    transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
+.hero-content button {
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    background: black;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 10px;
 }
-
-/* Al pasar el mouse, el fondo cubre todo el texto y aparece la línea */
-#correo:hover {
-    background-size: 100% 100%; /* Expande el fondo verticalmente */
-    color: white; /* Cambia el color del texto */
+.hero-content button:hover {
+    background: #004570;
 }
 
 
+/* About Section */
+#about{
+    background-color: #d6d6d6;
+}
 
+#about-content {
+    max-width: 80vw;
+}
 
-
-
-
-.titleK , .titleP  {
-    padding: 40px;
-    margin: 2rem auto; /* Centra horizontalmente con 'auto' y agrega margen vertical */
-    text-align: center;
-    border-radius:  50px;
-    max-width: 1000px; /* Limita el ancho máximo */
-    width: 90%; /* Ocupa un 90% del ancho de la pantalla como máximo */
+#about h1{
     color: #004570;
-    font-size: 2.4em;
-    margin-bottom: -2vw;
-    
-
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+#about h2{
+    color: #004570;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1.75rem;
 }
 
-#knowledge-section{
-    background-color: #dbdbdb;
-    height: 80vh;
+#about p{
+    color: #333;
+    font-size: 1.3rem;
 }
 
-
-
-#knowledge {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
-    
-    
-}
-#conocimientos{
-    padding: 40px;
-    margin: 2rem auto; 
+#about #knowledge-section{
     text-align: center;
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
-    max-width: fit-content;
+    max-width: 60vw;    
+    margin: auto;
+
 }
 
-
-
-.knowledge-category {
-    margin-bottom: 40px;
-    display: flex; /* Permite que las categorías se alineen horizontalmente */
-    margin-right: 1em; /* Espaciado entre las categorías */
-    align-content: center;
-    background-color: #ffffff;
-    border-radius: 4px;
-    box-shadow: 0px 5px 5px rgb(235, 235, 235);
-    width:  250px;
-    height: 50px;
-    padding-top: 10px;
-}
-
-.knowledge-category h3 {
-    font-size: 1.6rem;
-    color: black;
-    margin-bottom: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
+#about #knowledge-item img{
+    max-width: 50px;
+    max-height: auto;
+    margin-right: 10px;
     
 }
 
-
-
-.knowledge-category img {
-    max-height: 40px;
-    max-width: auto;
-    padding-left: 10px;
-}
-
-#projects-section{
-    background-color: #fff;
-}
-
-
-
-#projects {
-    padding: 2rem 1rem;
-
+#about #knowledge-item {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    text-align: center;
-    align-items: center;
-    
-}
-
-#projectos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-width: 90vh;
-
-   
+    margin: 10px;
+    padding: 5px;
+    border-radius: 2px;
+    color: white;
+    font-size: .8rem;
+    width: 12vw;
+    letter-spacing: .1rem;
 }
 
 
 
-.project {
-    text-align: center;
-    font-family: monospace;
-    height: auto;
-    max-width: 30vw;
-    margin: 20px;
-    margin-bottom: 50px;
-}
 
-.project h3 {
-    color: #333;
-    font-family: sans-serif;
-    font-size: 1em;
-    margin-bottom: 0px;
-    margin-top: 0.5em;
-}
-
-
-#titleImage{
-    max-height: 120px;
-    max-width: auto;
-    padding: 14px;
-    border-radius: 6px;
-}
-
-#informationBox{
-    display: flex;
+/* projects Section*/
+#projects{
     flex-direction: column;
-    align-items: center;
-    color: #333333;
-    font-family: sans-serif;
-    height: 220px;
-}
-#volandouyEnlace{
-    display: inline-block;
-    position: relative;
-    font-weight: bold;
-    padding-bottom: 5px; /* Espacio para la línea */
-    padding-left: 10px; /* Espacio adicional a la izquierda */
-    padding-right: 10px; /* Espacio adicional a la derecha */
-    color: #004570; /* Color del texto */
-    background: linear-gradient(to top, #004570 0%, #004570 0%);
-    background-size: 100% 2px; /* Inicialmente una línea delgada */
-    background-position: bottom;
-    background-repeat: no-repeat;
-    transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
-    font-size: 1em;
 }
 
-#volandouyEnlace:hover {
-    background-size: 100% 100%; /* Expande el fondo verticalmente */
-    color: white; /* Cambia el color del texto */
-}
-
-
-#about-section{
-    background-color: #dbdbdb;
-}
-
-/* About Section */
-#about {
-    padding: 2rem 1rem;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-
-#about h2 {
-    padding: 40px;
-    text-align: center;
+#projects h1{
     color: #004570;
-    font-size: 2.4em;
-    
+    font-size: 3rem;
+    margin: auto;
+    margin-bottom: -10vh;
+}
+
+#projects-content{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 80vw;    
+    margin: auto;
+}
+
+#projects #project img{
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+}
+
+#projects #project img:hover{
+    transform: scale(1.1);
+}
+
+#projects #project {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 6px;
+    color: #333;
+    font-size: 1rem;
+    width: 20vw;
+    background-color: #d6d6d6;
+    transition: transform 0.3s ease-in-out;
+}
+
+#project #informationBox{
+    height: 20vh;
+}
+
+#project #informationBox p{
+    margin-top: .5em;
+    font-family:Arial, Helvetica, sans-serif;
+
 }
 
 
-#fing-section {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Centra verticalmente la imagen y el texto */
-    gap: 10px; /* Espacio entre la imagen y el texto */
-    width: 80%;
-  }
-
-  #fing {
-    max-width: 100px; /* Ajusta el tamaño de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
-  }
-
-  #fing-section p {
-    margin: 0; /* Elimina márgenes adicionales del texto */
-  }
+#project p{
+    margin-top: 1em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 
 #contact-section{
-    
-}
-
-#contact {
     padding: 2rem;
     text-align: center;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     margin-bottom: 0px;
+    
+}
+
+#contact {
+    background-color: #d6d6d6;
 }
 
 #contact h2 {
     padding: 40px;
-    margin: 0rem auto; /* Centra horizontalmente con 'auto' y agrega margen vertical */
-    text-align: center;
-    max-width: 1000px; /* Limita el ancho máximo */
-    width: 90%; /* Ocupa un 90% del ancho de la pantalla como máximo */
     color: #004570;
-    font-size: 2.4em;
+    font-size: 3em;
     
 }
 
@@ -457,7 +356,7 @@ form input:focus, form textarea:focus {
 
 form button {
     padding: 0.8rem 2rem;
-    background: #333;
+    background: black;
     color: #fff;
     border: none;
     border-radius: 15px;
@@ -466,365 +365,144 @@ form button {
 }
 
 form button:hover {
-    background: linear-gradient(#023a5c, #011f31);
+    background: #004570;
 }
 
-
-/* Footer */
 footer {
     text-align: center;
     padding: 1rem;
-    background: #272727;
+    background: black;
     color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: white;
-    overflow-x: hidden; /* Elimina el scroll horizontal */
-}
-
-
-
-
-
 
 @media (max-width: 768px) {
-
     header {
         position: static; /* Ya no es fijo */
         box-shadow: none; /* Opcional: elimina la sombra */
     }
-
-    .hero-content{
-        display: block;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
-
-
-        
-    }
-    #hero{
-        align-items: center;
-        align-self: center;
-        justify-content: center;
-        height: 120vh;
-
-    }
-    
-    #avatar{
-        max-width: 300px;
-        max-height: auto;
-        margin: 0px;
+    #language-toggle{
+        margin-right: 40px;
     }
 
-    #proyect-image{
-        max-width: 275px;
-        max-height: auto;
-
-    }
-
-
-
-    .titleP , .titleK{
-        font-size: 1.5em;
-        background-color:transparent ;
-        padding: 5px;
-        margin-bottom: 5px;
-        align-items: center;
-        align-self: center;
-        justify-content: center;
-        display: flex;
-
-        
-    }
-
-    .nav-links {
-        list-style: none;
-        display: flex;
-        gap: 0.5rem;
-        font-size: .7rem;
-        
-    }
-
-    
-
-   
-
-    #knowledge-section {
-        padding: 10px;
-        justify-content: center;
-        border-radius: 10px;
-        height: fit-content;
-
-    }
-
-    .knowledge-category {
-        margin:0px;
-        margin-bottom: 10px; /* Espacio entre los divs */
+    #hero #avatar{
         width: 250px;
-        padding: 10px;
         height: auto;
+        margin-right: 0px;
     }
-
-    #projects-section{
-        height: fit-content;
-    }
-
-    #projects {
-        justify-content: center;
-        display: inline;
-
-
-    }
-
-    #informationBox{
-        height: 80vw;
-        width: 80vw;
-    }
-
-    #projectos {
-        justify-content: center;
+    .hero-content {
+        max-width: 80%;
+        margin: auto;
         display: block;
-        text-align: center; /* Centra el contenido dentro de #knowledge */
-
-    }
-    .project{
-        padding: 20px;
-        justify-content: center;
-        display: block;
-        text-align: center; /* Centra el contenido dentro de #knowledge */
+        align-items: center;
+        align-self: center;
     }
 
-    .project p{
-        width: 80vw;
-    }
-
-
-    #knowledge h2 {
-        font-size: 2rem;
-    }
-    #knowledge h3 {
-        font-size: 1.5rem;
-    }
-    
-    .knowledge-category{
-        width: fit-content;
-        margin:10px;
-    }
-
-    .knowledge-category h3 {
+    #knowledge-item h3{
         display: none;
     }
-    .knowledge-category img {
-        padding-left: 0px;
+    #about #knowledge-item img{
+        max-width: 50px;
+        max-height: auto;
+        margin-right: 0px;
+        
+    }
+    #about-content{
+        padding-bottom: 40px;
+        
     }
 
-    .knowledge-category ul li {
-        font-size: 1.5rem;
+    #about {
+        max-height: fit-content;
     }
 
-    #language-toggle{
-        font-size: 0.8em;
+    #projects{
+        height: 250vh;
     }
 
-    #contact{
-        padding:4rem;
-        display: inline-block; /* Hace que los divs se alineen de manera bloque pero respetando el centrado */
-        text-align: center; 
-        margin:0px;
+    #projects-content{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        width: 100%;    
+        margin: auto;
     }
-
-    #titleImage{
-        max-width: 300px;
-        height: auto;
-    }
-
-    #about{
-        height: 100vh;
-    }
-
-    #informationBox{
+    #projects #project {
+        font-size: 1rem;
+        width: 60vw;
         height: fit-content;
+        margin: auto;
+        margin-bottom: 40px;
     }
 
+    #project #informationBox{
+        height: fit-content;
+        margin-bottom:30px ;
+    }
 
-   
-
-    
 }
 
-
-
 @media (max-height: 768px) {
-
-    .nav-links {
-        list-style: none;
-        display: flex;
-
-        
-    }
-
     header {
         position: static; /* Ya no es fijo */
         box-shadow: none; /* Opcional: elimina la sombra */
     }
-
-    .hero-content{
-        display: block;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
-    }
-    #hero{
-        align-items: center;
-        align-self: center;
-        justify-content: center;
-        height: fit-content;
-        margin-bottom: 40px;
-        margin-top: 40px;
-
-    }
-    
-    #avatar{
-        max-width: 300px;
-        max-height: auto;
-        margin: 0px;
-    }
-
-    #proyect-image{
-        max-width: 250px;
-        max-height: auto;
-
-    }
-
-
-
-    .titleP , .titleK{
-        font-size: 1.5em;
-        background-color:transparent ;
-        padding: 5px;
-        align-items: center;
-        align-self: center;
-        justify-content: center;
-        display: flex;
-
-        
-    }
-
-
-
-    
-
-   
-
-    #knowledge-section {
-        padding: 10px;
-        justify-content: center;
-        border-radius: 10px;
-        height: fit-content;
-
-    }
-
-    .knowledge-category {
-        margin:0px;
-        margin-bottom: 10px; /* Espacio entre los divs */
-        width: 250px;
-        padding: 10px;
-        
-    }
-
-    #projects-section{
-        height: fit-content;
-    }
-
-
-    #informationBox{
-       height: fit-content;
-       font-size: 0.8em;
-    }
-
-    .project{
-
-    }
-
-
-    #knowledge h2 {
-        font-size: 2rem;
-    }
-    #knowledge h3 {
-        font-size: 1.5rem;
-    }
-    
-    .knowledge-category{
-        width: fit-content;
-        margin:10px;
-    }
-
-    .knowledge-category h3 {
-        display: none;
-    }
-    .knowledge-category img {
-        padding-left: 0px;
-    }
-
-    .knowledge-category ul li {
-        font-size: 1.5rem;
-    }
-
     #language-toggle{
-        font-size: 0.8em;
+        margin-right: 40px;
     }
 
-    #contact{
-        padding:4rem;
-        display: inline-block; /* Hace que los divs se alineen de manera bloque pero respetando el centrado */
-        text-align: center; 
-        margin:0px;
-        justify-content: center;
-    }
-
-    #titleImage{
-        max-width: 300px;
+    #hero #avatar{
+        width: 250px;
         height: auto;
+        
     }
 
     #about{
-        height: 100vh;
+        height: fit-content;
+    }
+
+    #knowledge-item h3{
+        display: none;
+    }
+    #about #knowledge-item img{
+        max-width: 50px;
+        max-height: auto;
+        margin-right: 0px;
+        
+    }
+    #about-content{
+        padding-bottom: 40px;
+        
+    }
+
+    #projects{
+        height: 400vh;
+    }
+
+    #projects-content{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;    
+        margin: auto;
+    }
+    #projects #project {
+        font-size: 1rem;
+        width: 60vw;
+        height: fit-content;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    #project #informationBox{
+        height: fit-content;
+        margin-bottom:30px ;
     }
 
     #contact{
-        display: block;
+        height: 150vh;
     }
 
-    #titleImage{
-        width: 328px;
-        height: auto;
-    }
-    #imagenProyecto{
-        width: 330px;
-        height: 150px;
-    }
-    /* Proyectos */
-    #projectos {
-        display: flex;
-        flex-wrap: wrap; /* Permite ajuste para pantallas pequeñas */
-        justify-content: center;
-        gap: 1rem; /* Espaciado entre proyectos */
-        max-width: 100%; /* Asegura que no desborde */
-        margin: 20px auto;
-    }
-
-
-    
-
-   
-
-    
 }
