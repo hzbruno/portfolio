@@ -435,20 +435,19 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 90%;    
+        width: fit-content;    
         margin: auto;
     }
     #projects #project {
         font-size: 1rem;
         width: fit-content;
         height: fit-content;
-        margin: auto;
-        margin-bottom: 40px;
+        margin: 3em;
     }
 
     #project #informationBox{
         height: fit-content;
-        margin-bottom:30px ;
+        padding-bottom:50px ;
     }
 
     #contact h2{
@@ -500,7 +499,7 @@ footer {
         
     }
     #recentProjects{
-        padding: 50px;
+        margin: 50px;
     }
 
 
