@@ -268,9 +268,9 @@ section {
 }
 
 #projects #project img{
-    width: 250px;
+    width: 90%;
     height: auto;
-    border-radius: 12px;
+    border-radius: 5px;
 }
 
 #projects #project img:hover{
