@@ -381,6 +381,10 @@ footer {
         position: static; /* Ya no es fijo */
         box-shadow: none; /* Opcional: elimina la sombra */
     }
+    .nav-links {
+        font-size: 0.8rem;
+    }
+
     #language-toggle{
         margin-right: 40px;
     }
@@ -423,6 +427,7 @@ footer {
 
     #projects{
         height: fit-content;
+        width: 100%;
     }
 
     #projects-content{
@@ -430,7 +435,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;    
+        width: 90%;    
         margin: auto;
     }
     #projects #project {
@@ -454,6 +459,11 @@ footer {
     form input, form textarea {
         width: 90%;
     }
+
+    #contact{
+        height: fit-content;
+    }
+
 
 }
 
@@ -520,7 +530,7 @@ footer {
     }
 
     #contact{
-        height: 150vh;
+        height: fit-content;
     }
 
 }
