@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
             btnResume: "Download CV",
 
             aboutMe: "About Me",
-            aboutMeDescription: "Hello, my name is Bruno Hernández. I am a Software Engineer Student from Uruguay.<br>I have a strong talent for self-research and self-education, which helps me stay updated and continuously improve my skills.Additionally, I work at my family's tech and general goods store in my local city,<br> where I am actively involved as a customer service advisor,assisting clients and ensuring a positive experience.",
+            aboutMeDescription: "Hello, my name is Bruno Hernández. I am a Software Engineer Student from Uruguay.I have a strong talent for self-research and self-education, which helps me stay updated and continuously improve my skills. I am passionate about programming and technology, and I am always looking for new challenges and opportunities to learn and grow. I am a proactive, responsible, and committed person, with excellent teamwork skills and a strong desire to contribute to the success of any project I am involved in.",
             knowledge: "Knowledge",
 
             recentProjects: "Recent Projects",
 
-            VolandoUYDescripcion: "Airline system with a central server in Java (Swing) and a web server (JSP, servlets), synchronized through web services. Allows customers to book flights and airlines to manage routes and flights, with changes reflected simultaneously on both servers. It uses OOP, design patterns and custom base types.",
+            VolandoUYDescripcion: "Airline system with a central server in Java (Swing) and a web server (JSP, servlets), synchronized through web services. Allows customers to book flights and airlines to manage routes and flights, with changes reflected simultaneously on both servers. It uses OOP based in different design patterns.",
             dessVUY: "Developed with HTML, CSS , JavaScript, Servlets, Java, Maven",
 
             UTU:"Developed in my last year of high school, it is a Unity game made up of a collection of minigames. The project involved creating interactive mechanics, engaging visual design, and a well-organized structure to ensure a fluid and dynamic experience for players.",
@@ -42,12 +42,12 @@ document.addEventListener("DOMContentLoaded", () => {
             btnResume: "Descargar CV",
 
             aboutMe: "Sobre Mi",
-            aboutMeDescription: "Hola, mi nombre es Bruno Hernández. Soy estudiante de Ingeniería de Software de Uruguay.<br>Tengo un gran talento para la autoinvestigación y la autoeducación, lo que me ayuda a mantenerme actualizado y mejorar continuamente mis habilidades.<br>Además, trabajo en la tienda de tecnología y artículos generales de mi familia en mi ciudad local,donde participo activamente como asesor de servicio al cliente, ayudándolos y garantizando una experiencia positiva.",
+            aboutMeDescription: "Hola, mi nombre es Bruno Hernández. Soy un estudiante de Ingeniería de Software de Uruguay.Tengo un gran talento para la autoinvestigación y la autoeducación, lo que me ayuda a mantenerme actualizado y mejorar continuamente mis habilidades. Me apasiona la programación y la tecnología, y siempre estoy buscando nuevos desafíos y oportunidades para aprender y crecer. Soy una persona proactiva, responsable y comprometida, con excelentes habilidades para trabajar en equipo y con un fuerte deseo de contribuir al éxito de cualquier proyecto en el que participe.",
             knowledge: "Mis Conocimientos",
 
             recentProjects: "Projectos Recientes",
 
-            VolandoUYDescripcion: "Sistema de aerolínea con un servidor central en Java (Swing) y un servidor web (JSP, servlets), sincronizados mediante servicios web. Permite a los clientes reservar vuelos y a las aerolíneas gestionar rutas y vuelos, con los cambios reflejados simultáneamente en ambos servidores. Utiliza programación orientada a objetos, patrones de diseño y tipos de base personalizados.",
+            VolandoUYDescripcion: "Sistema de aerolínea con un servidor central en Java (Swing) y un servidor web (JSP, servlets), sincronizados mediante servicios web. Permite a los clientes reservar vuelos y a las aerolíneas gestionar rutas y vuelos, con los cambios reflejados simultáneamente en ambos servidores. Utiliza programación orientada a objetos basada en patrones de diseño.",
             dessVUY: "Desarrollado con HTML, CSS , JavaScript, Servlets, Java, Maven",
 
             UTU:"Desarrollado en mi último año de secundaria, es un juego de Unity compuesto por una colección de minijuegos. El proyecto implicó la creación de mecánicas interactivas, un diseño visual atractivo y una estructura bien organizada para garantizar una experiencia fluida y dinámica para los jugadores.",

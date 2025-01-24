@@ -271,6 +271,7 @@ section {
     width: 90%;
     height: auto;
     border-radius: 5px;
+    margin: 20px;
 }
 
 #projects #project img:hover{
@@ -283,17 +284,17 @@ section {
     border-radius: 6px;
     color: #333;
     font-size: 1rem;
-    width: 20vw;
+    width: 25vw;
     background-color: #d6d6d6;
     transition: transform 0.3s ease-in-out;
 }
 
 #project #informationBox{
-    height: 20vh;
+    height: 18vh;
 }
 
 #project #informationBox p{
-    margin-top: .5em;
+    margin-top: 0px;
     font-family:Arial, Helvetica, sans-serif;
 
 }
