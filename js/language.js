@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
  // Language toggle logic
+    const downloadLink = document.querySelector("#downloadLink");
     const languageToggle = document.querySelector("#language-toggle");
     const texts = {
         en: {
@@ -94,6 +95,9 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector("#mensajeContacto").textContent = texts[lang].mensajeContacto;
         document.querySelector("#botonEnviar").textContent = texts[lang].botonEnviar;
 
+        if (downloadLink) {
+            downloadLink.href = lang === "es" ? "/cv/cv_es.pdf" : "/cv/cv_en.pdf";
+        }
         
         
     });
