@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector("#botonEnviar").textContent = texts[lang].botonEnviar;
 
         if (downloadLink) {
-            downloadLink.href = lang === "es" ? "/cv/cv_es.pdf" : "/cv/cv_en.pdf";
+            downloadLink.href = lang === "es" ? "cv_es.pdf" : "cv_en.pdf";
         }
         
         
